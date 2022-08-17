@@ -1,54 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-}
-
 body {
-  background-image: url("/Wildlife/assets/Rectangle.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: right;
-  /* text-align: center; */
-  /* padding: 0 20px;
-  color: white; */
-  /* background-color: #02160b; */
+  margin: 0px;
+  padding: 0px;
+  background: #cccccc;
 }
 
-/* header {
-  
-} */
+.header-wrap {
+  margin: 0 auto;
+  width: 1440;
+  height: 779px;
+  background: url(/Wildlife/assets/Rectangle.jpg) no-repeat center;
+}
 
-#logo-image {
-  position: absolute;
-  margin-left: 121.07px;
-  margin-top: 20.8px;
-  height: 58.4x;
+header {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoimg {
+  height: 58.4px;
   width: 68.2px;
+  margin-top: 20.8px;
 }
 
 h1 {
-  /* wildlife */
-
-  position: absolute;
-  width: 155px;
-  height: 60px;
-  left: 205px;
-  top: 19px;
-
+  display: inline;
   /* Logo */
-
+  padding: 3px 15px 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 60px;
-  /* identical to box height, or 188% */
 
   text-transform: uppercase;
 
@@ -57,71 +42,136 @@ h1 {
   color: #f7f7f7;
 }
 
-#signin {
-  position: absolute;
+.Header-Nav-ul button,
+a {
+  display: flex;
+  text-decoration: none;
+  text-align: justify;
+  color: #f7f7f7;
+}
+
+nav {
+  width: 500px;
+}
+
+.Header-Nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 5px 0 0 7px;
+}
+
+li,
+.signin {
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 23px;
+}
+
+.signin {
+  border: 2px solid;
+  border-color: #cd6326;
+  border-radius: 5px;
   width: 120px;
   height: 50px;
-  left: 1200px;
-  top: 24px;
-  border: 2px solid #cd6326;
-  border-radius: 5px;
+  background: transparent;
+  font-family: "Roboto";
+  padding-left: 7px;
 }
 
-.fa-search {
-  position: absolute;
-  height: 23.312999725341797px;
-  width: 23.312999725341797px;
-  left: 1111px;
-  top: 38px;
-  border-radius: 0px;
-  background-color: #02160b;
-  color: aliceblue;
+.signin:hover {
+  background: #cd6326;
+}
+.signin:active {
+  background: #8f5613;
 }
 
-#contacts a {
-  text-decoration: none;
-  list-style-type: none;
-  /* Contacts */
+#search:hover {
+  width: 25px;
+  height: 25px;
+}
 
-  position: absolute;
-  width: 96px;
-  height: 60px;
-  left: 951px;
-  top: 19px;
+.Header-Nav-ul a:hover {
+  color: #666666;
+}
 
-  /* menu-UI */
+/* Block Survival */
+.header-survival {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 77px;
+}
 
+.survival-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 275px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.survival-wrap h2 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 60px;
-  /* identical to box height, or 261% */
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height, or 150% */
 
-  /* font-light */
+  letter-spacing: 2px;
 
-  color: #f7f7f7;
+  /* /orange-main */
+
+  color: #cd6326;
 }
 
-#blog a {
-  text-decoration: none;
-  list-style-type: none;
-  position: absolute;
-  width: 50px;
-  height: 60px;
-  left: 840px;
-  top: 19px;
+.survival-wrap p {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
 
-  /* menu-UI */
 
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 60px;
-  /* identical to box height, or 261% */
+/* font-light */
 
-  /* font-light */
+color: #F7F7F7;
 
-  color: #f7f7f7;
 }
+
+.donate {
+background: #CD6326;
+border-radius: 5px;
+width: 160px;
+height: 60px;
+border: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 27px;
+/* identical to box height */
+
+text-align: center;
+
+/* font-light */
+
+color: #F7F7F7;
+}
+
+.donate:hover{
+  background: #E39128;
+}
+.donate:active{
+  background: #CD6326;
+}
+
+/* Block Main*/
